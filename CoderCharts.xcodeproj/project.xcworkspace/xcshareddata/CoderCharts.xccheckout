@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>CBCFA5E4-B138-4731-B5D6-7AED6486110D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CoderCharts</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D962D033506066F1F3DECCF162AE2F25C5BFA087</key>
+		<string>github.com:hkareem2222/CoderCharts.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CoderCharts.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D962D033506066F1F3DECCF162AE2F25C5BFA087</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:hkareem2222/CoderCharts.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D962D033506066F1F3DECCF162AE2F25C5BFA087</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D962D033506066F1F3DECCF162AE2F25C5BFA087</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CoderCharts</string>
+		</dict>
+	</array>
+</dict>
+</plist>
