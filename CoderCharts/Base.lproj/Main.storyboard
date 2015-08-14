@@ -5,10 +5,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Client View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ClientViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -87,7 +87,7 @@
                                         <color key="textColor" red="0.56078431370000004" green="0.56470588239999997" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACTUAL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OpM-fH-J5D">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACTUAL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OpM-fH-J5D">
                                         <rect key="frame" x="252" y="5" width="65" height="15"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="65" id="LvM-SC-k8b"/>
@@ -161,14 +161,19 @@
                             <constraint firstItem="yoh-6r-4br" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="uRj-UT-kFs"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="actualView" destination="Bi8-2C-aqz" id="tjy-8A-Y0A"/>
+                        <outlet property="expectedView" destination="WBT-x5-Igm" id="CLM-OO-Iad"/>
+                        <outlet property="hoursView" destination="E1Z-GT-kat" id="nvt-rA-qIf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--View Controller-->
+        <!--Line Chart View Controller-->
         <scene sceneID="GCp-1o-cSS">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="bVM-1M-ODE" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="bVM-1M-ODE" customClass="LineChartViewController" customModule="CoderCharts" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lhJ-ul-19m"/>
                         <viewControllerLayoutGuide type="bottom" id="wg1-gD-Y2D"/>
@@ -177,7 +182,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="568" height="423"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mUe-J0-GYF">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mUe-J0-GYF" customClass="LineChartView" customModule="Charts">
                                 <rect key="frame" x="0.0" y="0.0" width="568" height="423"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -191,6 +196,9 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
+                    <connections>
+                        <outlet property="lineChartView" destination="mUe-J0-GYF" id="yiy-l2-UUC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6XK-R7-54a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

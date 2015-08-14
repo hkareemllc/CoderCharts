@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		85A1231C1B7D440500937740 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A1231B1B7D440500937740 /* main.m */; };
 		85A1231F1B7D440500937740 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A1231E1B7D440500937740 /* AppDelegate.m */; };
-		85A123221B7D440500937740 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A123211B7D440500937740 /* ViewController.m */; };
 		85A123251B7D440500937740 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85A123231B7D440500937740 /* Main.storyboard */; };
 		85A123271B7D440500937740 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85A123261B7D440500937740 /* Images.xcassets */; };
 		85A1232A1B7D440500937740 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85A123281B7D440500937740 /* LaunchScreen.xib */; };
 		85A123361B7D440500937740 /* CoderChartsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A123351B7D440500937740 /* CoderChartsTests.m */; };
+		85AC149E1B7E463F0026B398 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85AC149D1B7E46370026B398 /* Charts.framework */; };
+		85AC149F1B7E463F0026B398 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 85AC149D1B7E46370026B398 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		85AC14A51B7E46BB0026B398 /* LineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AC14A41B7E46BB0026B398 /* LineChartViewController.swift */; };
+		85AC14A81B7E47260026B398 /* ClientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85AC14A71B7E47260026B398 /* ClientViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +27,35 @@
 			remoteGlobalIDString = 85A123151B7D440500937740;
 			remoteInfo = CoderCharts;
 		};
+		85AC149C1B7E46370026B398 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85AC14981B7E46370026B398 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5BA8EC401A9D14DC00CE82E1;
+			remoteInfo = Charts;
+		};
+		85AC14A01B7E463F0026B398 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85AC14981B7E46370026B398 /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BA8EC3F1A9D14DC00CE82E1;
+			remoteInfo = Charts;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		85AC14A21B7E463F0026B398 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				85AC149F1B7E463F0026B398 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		85A123161B7D440500937740 /* CoderCharts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoderCharts.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,14 +63,17 @@
 		85A1231B1B7D440500937740 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		85A1231D1B7D440500937740 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		85A1231E1B7D440500937740 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		85A123201B7D440500937740 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		85A123211B7D440500937740 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		85A123241B7D440500937740 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		85A123261B7D440500937740 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		85A123291B7D440500937740 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		85A1232F1B7D440500937740 /* CoderChartsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoderChartsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		85A123341B7D440500937740 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85A123351B7D440500937740 /* CoderChartsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoderChartsTests.m; sourceTree = "<group>"; };
+		85AC14981B7E46370026B398 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../../../ios-charts/Charts/Charts.xcodeproj"; sourceTree = "<group>"; };
+		85AC14A31B7E46BB0026B398 /* CoderCharts-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoderCharts-Bridging-Header.h"; sourceTree = "<group>"; };
+		85AC14A41B7E46BB0026B398 /* LineChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineChartViewController.swift; sourceTree = "<group>"; };
+		85AC14A61B7E47260026B398 /* ClientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientViewController.h; sourceTree = "<group>"; };
+		85AC14A71B7E47260026B398 /* ClientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85AC149E1B7E463F0026B398 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,14 +116,16 @@
 		85A123181B7D440500937740 /* CoderCharts */ = {
 			isa = PBXGroup;
 			children = (
+				85AC14A61B7E47260026B398 /* ClientViewController.h */,
+				85AC14A71B7E47260026B398 /* ClientViewController.m */,
 				85A1231D1B7D440500937740 /* AppDelegate.h */,
 				85A1231E1B7D440500937740 /* AppDelegate.m */,
-				85A123201B7D440500937740 /* ViewController.h */,
-				85A123211B7D440500937740 /* ViewController.m */,
 				85A123231B7D440500937740 /* Main.storyboard */,
+				85AC14A41B7E46BB0026B398 /* LineChartViewController.swift */,
 				85A123261B7D440500937740 /* Images.xcassets */,
 				85A123281B7D440500937740 /* LaunchScreen.xib */,
 				85A123191B7D440500937740 /* Supporting Files */,
+				85AC14A31B7E46BB0026B398 /* CoderCharts-Bridging-Header.h */,
 			);
 			path = CoderCharts;
 			sourceTree = "<group>";
@@ -96,6 +133,7 @@
 		85A123191B7D440500937740 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				85AC14981B7E46370026B398 /* Charts.xcodeproj */,
 				85A1231A1B7D440500937740 /* Info.plist */,
 				85A1231B1B7D440500937740 /* main.m */,
 			);
@@ -119,6 +157,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		85AC14991B7E46370026B398 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85AC149D1B7E46370026B398 /* Charts.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,10 +175,12 @@
 				85A123121B7D440500937740 /* Sources */,
 				85A123131B7D440500937740 /* Frameworks */,
 				85A123141B7D440500937740 /* Resources */,
+				85AC14A21B7E463F0026B398 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				85AC14A11B7E463F0026B398 /* PBXTargetDependency */,
 			);
 			name = CoderCharts;
 			productName = CoderCharts;
@@ -186,6 +234,12 @@
 			mainGroup = 85A1230D1B7D440500937740;
 			productRefGroup = 85A123171B7D440500937740 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 85AC14991B7E46370026B398 /* Products */;
+					ProjectRef = 85AC14981B7E46370026B398 /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				85A123151B7D440500937740 /* CoderCharts */,
@@ -193,6 +247,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		85AC149D1B7E46370026B398 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 85AC149C1B7E46370026B398 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		85A123141B7D440500937740 /* Resources */ = {
@@ -219,9 +283,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85A123221B7D440500937740 /* ViewController.m in Sources */,
+				85AC14A51B7E46BB0026B398 /* LineChartViewController.swift in Sources */,
 				85A1231F1B7D440500937740 /* AppDelegate.m in Sources */,
 				85A1231C1B7D440500937740 /* main.m in Sources */,
+				85AC14A81B7E47260026B398 /* ClientViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +305,11 @@
 			isa = PBXTargetDependency;
 			target = 85A123151B7D440500937740 /* CoderCharts */;
 			targetProxy = 85A123301B7D440500937740 /* PBXContainerItemProxy */;
+		};
+		85AC14A11B7E463F0026B398 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = 85AC14A01B7E463F0026B398 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -349,9 +419,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = CoderCharts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CoderCharts/CoderCharts-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -359,9 +433,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = CoderCharts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CoderCharts/CoderCharts-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -418,6 +495,7 @@
 				85A1233B1B7D440500937740 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		85A1233C1B7D440500937740 /* Build configuration list for PBXNativeTarget "CoderChartsTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +504,7 @@
 				85A1233E1B7D440500937740 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
