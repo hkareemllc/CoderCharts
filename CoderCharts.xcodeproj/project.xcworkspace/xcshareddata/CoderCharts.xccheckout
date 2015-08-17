@@ -20,7 +20,7 @@
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>9025163822AAEA7A2D8AC9210D0874A56F62B462</key>
-		<string>../../../../../ios-charts</string>
+		<string>../../../ios-charts</string>
 		<key>D962D033506066F1F3DECCF162AE2F25C5BFA087</key>
 		<string>../..</string>
 	</dict>

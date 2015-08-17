@@ -12,17 +12,17 @@ import Charts
 class LineChartViewController: UIViewController {
 
     @IBOutlet weak var lineChartView: LineChartView!
-    var points: [Int]!
+    var points: [String]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //chart data
-        points = [0, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]
+        points = ["7/20", "7/21", "7/22", "7/23", "7/24", "7/25", "7/26", "7/27", "7/27", "7/28", "7/29"]
         setChart(points)
     }
 
-    func setChart(dataPoints: [Int]) {
+    func setChart(dataPoints: [String]) {
         
         //line chart Views
         lineChartView.noDataText = "You need to provide data for the chart."
@@ -32,12 +32,13 @@ class LineChartViewController: UIViewController {
         lineChartView.backgroundColor = UIColor(red: 51/255.0, green: 51/255.0, blue: 51/255.0, alpha: 1.0)
         lineChartView.gridBackgroundColor = UIColor(red: 51/255.0, green: 51/255.0, blue: 51/255.0, alpha: 1.0)
 //        lineChartView.gridBackgroundColor = UIColor(patternImage: UIImage(named: "dotgrid.png")!)
-        lineChartView.xAxis.enabled = false
+        lineChartView.xAxis.enabled = true
+        lineChartView.xAxis.drawGridLinesEnabled = false
         lineChartView.leftAxis.enabled = false
         lineChartView.rightAxis.enabled = false
         lineChartView.scaleXEnabled = false
         lineChartView.scaleYEnabled = false
-        
+        lineChartView.xAxis.labelTextColor = UIColor.whiteColor()
         //expected line
         let yValOne = [0.0, 100.0, 200.0, 300.0, 400.0, 500.0, 600.0, 700.0, 800.0, 900.0, 1000.0]
         var dataEntriesOne: [ChartDataEntry] = []
