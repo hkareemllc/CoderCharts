@@ -17,6 +17,8 @@
 		85AC149F1B7E463F0026B398 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 85AC149D1B7E46370026B398 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		85AC14A51B7E46BB0026B398 /* LineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AC14A41B7E46BB0026B398 /* LineChartViewController.swift */; };
 		85AC14A81B7E47260026B398 /* ClientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85AC14A71B7E47260026B398 /* ClientViewController.m */; };
+		85AE15D71B8236B40012E0B8 /* PieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AE15D61B8236B40012E0B8 /* PieChartViewController.swift */; };
+		85AE15DA1B8236BC0012E0B8 /* DeveloperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85AE15D91B8236BC0012E0B8 /* DeveloperViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,9 @@
 		85AC14A41B7E46BB0026B398 /* LineChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineChartViewController.swift; sourceTree = "<group>"; };
 		85AC14A61B7E47260026B398 /* ClientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientViewController.h; sourceTree = "<group>"; };
 		85AC14A71B7E47260026B398 /* ClientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientViewController.m; sourceTree = "<group>"; };
+		85AE15D61B8236B40012E0B8 /* PieChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartViewController.swift; sourceTree = "<group>"; };
+		85AE15D81B8236BC0012E0B8 /* DeveloperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeveloperViewController.h; sourceTree = "<group>"; };
+		85AE15D91B8236BC0012E0B8 /* DeveloperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeveloperViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +121,9 @@
 		85A123181B7D440500937740 /* CoderCharts */ = {
 			isa = PBXGroup;
 			children = (
+				85AE15D61B8236B40012E0B8 /* PieChartViewController.swift */,
+				85AE15D81B8236BC0012E0B8 /* DeveloperViewController.h */,
+				85AE15D91B8236BC0012E0B8 /* DeveloperViewController.m */,
 				85AC14A61B7E47260026B398 /* ClientViewController.h */,
 				85AC14A71B7E47260026B398 /* ClientViewController.m */,
 				85A1231D1B7D440500937740 /* AppDelegate.h */,
@@ -284,9 +292,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				85AC14A51B7E46BB0026B398 /* LineChartViewController.swift in Sources */,
+				85AE15D71B8236B40012E0B8 /* PieChartViewController.swift in Sources */,
 				85A1231F1B7D440500937740 /* AppDelegate.m in Sources */,
 				85A1231C1B7D440500937740 /* main.m in Sources */,
 				85AC14A81B7E47260026B398 /* ClientViewController.m in Sources */,
+				85AE15DA1B8236BC0012E0B8 /* DeveloperViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

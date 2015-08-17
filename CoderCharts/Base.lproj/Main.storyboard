@@ -166,10 +166,50 @@
                         <outlet property="actualView" destination="Bi8-2C-aqz" id="tjy-8A-Y0A"/>
                         <outlet property="expectedView" destination="WBT-x5-Igm" id="CLM-OO-Iad"/>
                         <outlet property="hoursView" destination="E1Z-GT-kat" id="nvt-rA-qIf"/>
+                        <segue destination="H3L-vb-iEG" kind="show" identifier="ClientToDeveloper" id="U3g-Wq-b0N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Developer View Controller-->
+        <scene sceneID="dKO-EX-Ufy">
+            <objects>
+                <viewController id="H3L-vb-iEG" customClass="DeveloperViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zHd-hq-6Q6"/>
+                        <viewControllerLayoutGuide type="bottom" id="teF-Pq-hya"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="W2N-W1-Xxu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k5U-ja-j31">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="225"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="225" id="nxo-rf-Ovc"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="mAb-Tx-UyP" kind="embed" id="6DD-qV-Hcn"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="k5U-ja-j31" firstAttribute="top" secondItem="W2N-W1-Xxu" secondAttribute="top" id="EOe-SI-899"/>
+                            <constraint firstAttribute="trailing" secondItem="k5U-ja-j31" secondAttribute="trailing" id="cme-RI-fn3"/>
+                            <constraint firstItem="k5U-ja-j31" firstAttribute="leading" secondItem="W2N-W1-Xxu" secondAttribute="leading" id="rLW-Y5-wLi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="cF6-Cf-eTU" kind="unwind" identifier="DeveloperToClient" unwindAction="unwindToClient:" id="Mvv-7g-bJn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5je-PT-jh6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="cF6-Cf-eTU" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="943" y="337"/>
         </scene>
         <!--Line Chart View Controller-->
         <scene sceneID="GCp-1o-cSS">
@@ -204,6 +244,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6XK-R7-54a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="245" y="-228.5"/>
+        </scene>
+        <!--Pie Chart View Controller-->
+        <scene sceneID="wYV-ey-NxB">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="mAb-Tx-UyP" customClass="PieChartViewController" customModule="CoderCharts" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aMl-nm-6LR"/>
+                        <viewControllerLayoutGuide type="bottom" id="fRr-J2-17m"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="CRn-vv-dqb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="225"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sf3-oy-0SM" customClass="PieChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="225"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Sf3-oy-0SM" firstAttribute="leading" secondItem="CRn-vv-dqb" secondAttribute="leading" id="BNj-Wz-ZyE"/>
+                            <constraint firstItem="fRr-J2-17m" firstAttribute="top" secondItem="Sf3-oy-0SM" secondAttribute="bottom" id="dxC-cE-MwP"/>
+                            <constraint firstAttribute="trailing" secondItem="Sf3-oy-0SM" secondAttribute="trailing" id="ns3-UP-6aP"/>
+                            <constraint firstItem="Sf3-oy-0SM" firstAttribute="top" secondItem="aMl-nm-6LR" secondAttribute="bottom" id="t5I-zz-8WU"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <connections>
+                        <outlet property="pieChartView" destination="Sf3-oy-0SM" id="ycC-ch-f0f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WWS-g5-lnd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="943" y="-177.5"/>
         </scene>
     </scenes>
 </document>

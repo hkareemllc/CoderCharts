@@ -16,7 +16,9 @@ class LineChartViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
         //chart data
         points = ["7/20", "7/21", "7/22", "7/23", "7/24", "7/25", "7/26", "7/27", "7/27", "7/28", "7/29"]
         setChart(points)

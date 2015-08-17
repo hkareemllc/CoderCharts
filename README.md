@@ -1,6 +1,6 @@
 Coder Charts
 ======
-**Coder Charts** is a test app built for [CoderEXP](coderexp.com) working with the [iOS Charts Framework](https://github.com/danielgindi/ios-charts).
+**Coder Charts** is a demo app built for [CoderEXP](coderexp.com) working with the [iOS Charts Framework](https://github.com/danielgindi/ios-charts).
 
 ## Technology
 * Swift

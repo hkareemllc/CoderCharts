@@ -27,4 +27,16 @@
     self.hoursView.layer.cornerRadius = 2.0;
 }
 
+-(void)viewDidAppear:(BOOL)animated {
+    [self performSelector:@selector(segueToDeveloper) withObject:nil afterDelay:5.0];
+}
+
+- (void)segueToDeveloper {
+    [self performSegueWithIdentifier:@"ClientToDeveloper" sender:self];
+}
+
+-(IBAction)unwindToClient:(UIStoryboardSegue *)segue {
+    
+}
+
 @end
