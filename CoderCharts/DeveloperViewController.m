@@ -16,11 +16,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [self performSelector:@selector(unwindToClient) withObject:nil afterDelay:5.0];
-}
-- (void)unwindToClient {
-    [self performSegueWithIdentifier:@"DeveloperToClient" sender:self];
 }
 
 

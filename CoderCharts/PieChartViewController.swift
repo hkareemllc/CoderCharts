@@ -20,7 +20,7 @@ class PieChartViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         months = ["Hello", "Hi"]
-        let unitsSold = [80.0, 20.0]
+        let unitsSold = [75.0, 25.0]
         setChart(months, values: unitsSold)
     }
     
@@ -28,11 +28,10 @@ class PieChartViewController: UIViewController {
         pieChartView.noDataText = "You need to provide data for the chart."
         pieChartView.centerText = "20%"
         pieChartView.centerTextColor = UIColor.whiteColor()
-        pieChartView.centerTextFont.fontWithSize(20.0)
         pieChartView.descriptionText = ""
         pieChartView.animate(xAxisDuration: 1.5)
         pieChartView.legend.enabled = false
-        pieChartView.drawSliceTextEnabled = false
+        pieChartView.userInteractionEnabled = false
         pieChartView.backgroundColor = UIColor(red: 51/255.0, green: 51/255.0, blue: 51/255.0, alpha: 1.0)
         pieChartView.holeColor = UIColor(red: 51/255.0, green: 51/255.0, blue: 51/255.0, alpha: 1.0)
         
@@ -48,9 +47,8 @@ class PieChartViewController: UIViewController {
         pieChartView.data = pieChartData
         pieChartView.data?.setValueTextColor(UIColor.clearColor())
         
-        var colors = [UIColor(red: 51/255.0, green: 51/255.0, blue: 51/255.0, alpha: 1.0), UIColor(red: 251/255.0, green: 38/255.0, blue: 108/255.0, alpha: 1.0)]
+        var colors = [UIColor.blackColor(), UIColor(red: 251/255.0, green: 38/255.0, blue: 108/255.0, alpha: 1.0)]
         pieChartDataSet.colors = colors
-        
     }
 
 }
