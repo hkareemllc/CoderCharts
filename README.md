@@ -3,8 +3,10 @@ Coder Charts
 **Coder Charts** is a test app built for [CoderEXP](coderexp.com) working with the [iOS Charts Framework](https://github.com/danielgindi/ios-charts).
 
 ## Technology
-* Map Kit Framework
-* Crashlytics Framework, Fabric
+* Swift
+* Container View Controllers
+* Swift with Obj-C (Bridging Headers)
+* [iOS Charts Framework](https://github.com/danielgindi/ios-charts)
 
 ## Screenshot
 ![Screenshot iOS](/CoderCharts.png)
