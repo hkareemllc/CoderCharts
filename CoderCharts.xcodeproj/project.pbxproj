@@ -13,8 +13,6 @@
 		85A123271B7D440500937740 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85A123261B7D440500937740 /* Images.xcassets */; };
 		85A1232A1B7D440500937740 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85A123281B7D440500937740 /* LaunchScreen.xib */; };
 		85A123361B7D440500937740 /* CoderChartsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A123351B7D440500937740 /* CoderChartsTests.m */; };
-		85AC149E1B7E463F0026B398 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85AC149D1B7E46370026B398 /* Charts.framework */; };
-		85AC149F1B7E463F0026B398 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 85AC149D1B7E46370026B398 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		85AC14A51B7E46BB0026B398 /* LineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AC14A41B7E46BB0026B398 /* LineChartViewController.swift */; };
 		85AC14A81B7E47260026B398 /* ClientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85AC14A71B7E47260026B398 /* ClientViewController.m */; };
 		85AE15D71B8236B40012E0B8 /* PieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AE15D61B8236B40012E0B8 /* PieChartViewController.swift */; };
@@ -29,20 +27,6 @@
 			remoteGlobalIDString = 85A123151B7D440500937740;
 			remoteInfo = CoderCharts;
 		};
-		85AC149C1B7E46370026B398 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 85AC14981B7E46370026B398 /* Charts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5BA8EC401A9D14DC00CE82E1;
-			remoteInfo = Charts;
-		};
-		85AC14A01B7E463F0026B398 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 85AC14981B7E46370026B398 /* Charts.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 5BA8EC3F1A9D14DC00CE82E1;
-			remoteInfo = Charts;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,7 +36,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				85AC149F1B7E463F0026B398 /* Charts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,7 +54,6 @@
 		85A1232F1B7D440500937740 /* CoderChartsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoderChartsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		85A123341B7D440500937740 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85A123351B7D440500937740 /* CoderChartsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoderChartsTests.m; sourceTree = "<group>"; };
-		85AC14981B7E46370026B398 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../../../ios-charts/Charts/Charts.xcodeproj"; sourceTree = "<group>"; };
 		85AC14A31B7E46BB0026B398 /* CoderCharts-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoderCharts-Bridging-Header.h"; sourceTree = "<group>"; };
 		85AC14A41B7E46BB0026B398 /* LineChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineChartViewController.swift; sourceTree = "<group>"; };
 		85AC14A61B7E47260026B398 /* ClientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientViewController.h; sourceTree = "<group>"; };
@@ -86,7 +68,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85AC149E1B7E463F0026B398 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,7 +122,6 @@
 		85A123191B7D440500937740 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				85AC14981B7E46370026B398 /* Charts.xcodeproj */,
 				85A1231A1B7D440500937740 /* Info.plist */,
 				85A1231B1B7D440500937740 /* main.m */,
 			);
@@ -165,14 +145,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		85AC14991B7E46370026B398 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				85AC149D1B7E46370026B398 /* Charts.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -188,7 +160,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				85AC14A11B7E463F0026B398 /* PBXTargetDependency */,
 			);
 			name = CoderCharts;
 			productName = CoderCharts;
@@ -242,12 +213,6 @@
 			mainGroup = 85A1230D1B7D440500937740;
 			productRefGroup = 85A123171B7D440500937740 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 85AC14991B7E46370026B398 /* Products */;
-					ProjectRef = 85AC14981B7E46370026B398 /* Charts.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				85A123151B7D440500937740 /* CoderCharts */,
@@ -255,16 +220,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		85AC149D1B7E46370026B398 /* Charts.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Charts.framework;
-			remoteRef = 85AC149C1B7E46370026B398 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		85A123141B7D440500937740 /* Resources */ = {
@@ -315,11 +270,6 @@
 			isa = PBXTargetDependency;
 			target = 85A123151B7D440500937740 /* CoderCharts */;
 			targetProxy = 85A123301B7D440500937740 /* PBXContainerItemProxy */;
-		};
-		85AC14A11B7E463F0026B398 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Charts;
-			targetProxy = 85AC14A01B7E463F0026B398 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
