@@ -1,0 +1,6 @@
+framework module Pods_CoderChartsTests {
+  umbrella header "Pods-CoderChartsTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
