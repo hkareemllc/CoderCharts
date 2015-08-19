@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ClientViewController : UIViewController
+@property NSArray *estimateGraphPoints;
 
+-(NSArray *)getEstimateGraphPoints;
 @end

@@ -12,16 +12,16 @@ import Charts
 class PieChartViewController: UIViewController {
 
     @IBOutlet weak var pieChartView: PieChartView!
-    var months: [String]!
-
+    var dates: [String]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     override func viewDidAppear(animated: Bool) {
-        months = ["Hello", "Hi"]
+        dates = ["Hello", "Hi"]
         let unitsSold = [75.0, 25.0]
-        setChart(months, values: unitsSold)
+        setChart(dates, values: unitsSold)
     }
     
     func setChart(dataPoints: [String], values: [Double]) {

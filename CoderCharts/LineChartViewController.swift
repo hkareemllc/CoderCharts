@@ -13,13 +13,15 @@ class LineChartViewController: UIViewController {
 
     @IBOutlet weak var lineChartView: LineChartView!
     var points: [String]!
-    
+    var clientVC = ClientViewController()
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     override func viewDidAppear(animated: Bool) {
         //chart data
+        let estimatePoints = clientVC.getEstimateGraphPoints()
         points = ["7/20", "7/21", "7/22", "7/23", "7/24", "7/25", "7/26", "7/27", "7/27", "7/28", "7/29"]
         setChart(points)
     }
