@@ -58,30 +58,6 @@
     }
     
     return nil;
-    
-    //ASYNCHRONOUS REQUEST
-//    [NSURLConnection sendAsynchronousRequest:request
-//                                       queue:[NSOperationQueue mainQueue]
-//                           completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
-//                               if (!connectionError) {
-//                                   NSDictionary *jsonDictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&connectionError];
-//                                   NSArray *projects = [jsonDictionary objectForKey:@"projects"];
-//                                   
-//                                   NSArray *totalPoints = projects.firstObject;
-//                                   NSDictionary *pointsDictionary = totalPoints.lastObject;
-//                                   NSArray *points = [pointsDictionary objectForKey:@"points"];
-//                                   for (NSDictionary *coordinates in points) {
-//                                       NSString *xPoint = [coordinates objectForKey:@"x_point"];
-//                                       NSNumber *yPoint = [coordinates objectForKey:@"y_point"];
-//                                       if (xPoint != nil && yPoint != nil) {
-//                                           [xPoints addObject:xPoint];
-//                                           [yPoints addObject:yPoint];
-//                                       }
-//                                   }
-//                               } else {
-//                                   NSLog(@"%@", [connectionError localizedDescription]);
-//                               }
-//                           }];
 }
 
 
